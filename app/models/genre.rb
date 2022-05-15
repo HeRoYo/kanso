@@ -9,4 +9,7 @@ class Genre < ActiveHash::Base
     { id: 7, name: '映像・ドラマ' },
     { id: 8, name: '映像・その他' }
   ]
+
+  include ActiveHash::Associations
+  has_many :posts
   end
