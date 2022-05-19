@@ -16,57 +16,22 @@
 
   <div class="row">
 
-  <div class="col-sm-6 col-lg-4 mb-4">
-      <div class="card p-3">
-        <figure class="p-3 mb-0">
-          <blockquote class="blockquote">
-            <p>A well-known quote, contained in a blockquote element.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer mb-0 text-muted">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
+  <% @posts.each do |p| %>
 
     <div class="col-sm-6 col-lg-4 mb-4">
-      <div class="card p-3">
-        <figure class="p-3 mb-0">
-          <blockquote class="blockquote">
-            <p>A well-known quote, contained in a blockquote element.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer mb-0 text-muted">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-        </figure>
-      </div>
+        <div class="card p-3">
+          <figure class="p-3 mb-0">
+            <blockquote class="blockquote">
+              <p><%= p.title %></p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-muted">
+              presented by <cite title="Source Title"><%= p.user.name %></cite>
+            </figcaption>
+          </figure>
+        </div>
     </div>
 
-    <div class="col-sm-6 col-lg-4 mb-4">
-      <div class="card p-3">
-        <figure class="p-3 mb-0">
-          <blockquote class="blockquote">
-            <p>A well-known quote, contained in a blockquote element.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer mb-0 text-muted">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4 mb-4">
-      <div class="card p-3">
-        <figure class="p-3 mb-0">
-          <blockquote class="blockquote">
-            <p>A well-known quote, contained in a blockquote element.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer mb-0 text-muted">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
+  <% end %>
 
   </div>
 
