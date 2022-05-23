@@ -17,8 +17,8 @@
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">ログイン</button>
-          <button type="button" class="btn btn-warning">新規登録</button>
+          <%= link_to "ログイン", new_user_session_path, class: "btn btn-outline-light me-2" %>
+          <%= link_to "新規登録", new_user_registration_path, class: "btn btn-warning" %>
         </div>
       </div>
     </div>
